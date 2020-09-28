@@ -496,6 +496,20 @@
         max-height: 340px;
         overflow-y: scroll;
       }
+      .closePopup .header-bar {
+        background-color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        opacity: 1;
+      }
+      .openPopup .header-bar {
+        background-color: black;
+      }
+      .openPopup #logo a {
+        color: white;
+      }
       .container {
         width: 100%;
         padding-right: 15px;
@@ -10613,25 +10627,11 @@
       }
       header .header-bar {
         position: fixed;
-        height: 40px;
+        height: 60px;
         z-index: 5;
-        left: 20px;
-        right: 20px;
-        top: 20px;
-      }
-      @media screen and (min-width: 576px) {
-        header .header-bar {
-          left: 16px;
-          right: 16px;
-          top: 16px;
-        }
-      }
-      @media screen and (min-width: 767px) {
-        header .header-bar {
-          left: 42px;
-          right: 42px;
-          top: 32px;
-        }
+        left: 0px;
+        right: 0px;
+        top: 0px;
       }
       header #logo {
         left: 0;
@@ -10640,11 +10640,12 @@
       header #logo,
       header #nav-toggle {
         position: absolute;
-        top: 0;
+        top: 20px;
+    padding-left: 40px;
         z-index: 2;
       }
       header #nav-toggle {
-        right: 0;
+        right: 60px;
         cursor: pointer;
       }
       header #nav-toggle .menu-bar {
@@ -27110,25 +27111,11 @@
       }
       header .header-bar {
         position: fixed;
-        height: 40px;
+        height: 60px;
         z-index: 5;
-        left: 20px;
-        right: 20px;
-        top: 20px;
-      }
-      @media screen and (min-width: 576px) {
-        header .header-bar {
-          left: 16px;
-          right: 16px;
-          top: 16px;
-        }
-      }
-      @media screen and (min-width: 767px) {
-        header .header-bar {
-          left: 42px;
-          right: 42px;
-          top: 32px;
-        }
+        left: 0px;
+        right: 0px;
+        top: 0px;
       }
       header #logo {
         left: 0;
@@ -27137,11 +27124,12 @@
       header #logo,
       header #nav-toggle {
         position: absolute;
-        top: 0;
+        top: 20px;
+    padding-left: 40px;
         z-index: 2;
       }
       header #nav-toggle {
-        right: 0;
+        right: 60px;
         cursor: pointer;
       }
       header #nav-toggle .menu-bar {
